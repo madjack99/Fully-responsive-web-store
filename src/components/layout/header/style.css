@@ -1,0 +1,39 @@
+.Header {
+  height: 169px;
+  padding: 37px 20px 27px 32px;
+  background-color: var(--header-color);
+}
+
+.Header-title {
+  margin: 0 0 21px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--open-sans-font);
+  font-weight: 600;
+  opacity: 0.85;
+  text-align: end;
+}
+
+.ShopSearch {
+  position: relative;
+}
+
+.ShopSearch-image {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.ShopSearch-input {
+  width: 100%;
+  height: 52px;
+  padding: 16px 16px 16px 44px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  border-radius: 25px;
+}
+
+::placeholder {
+  font-family: var(--open-sans-font);
+  font-weight: 400;
+  color: var(--placeholder-color);
+}

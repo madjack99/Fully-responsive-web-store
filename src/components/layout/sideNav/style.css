@@ -1,0 +1,20 @@
+.SideNav {
+  position: fixed;
+  width: 12px;
+  height: 100vh;
+  background: var(--sidebar-color);
+}
+
+.SideNav-pop {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: -48px;
+  width: 48px;
+  height: 106px;
+  padding: 0 0 0 5px;
+  background: url('./icons/mobile-union.svg');
+}
+
+.SideNav-menuIcon {
+}

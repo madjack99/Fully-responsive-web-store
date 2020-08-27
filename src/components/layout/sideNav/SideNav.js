@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 
 import burgerMenu from './icons/burger-menu.svg';
 import menuExit from './icons/menu-exit.svg';
+import logo from './icons/logo.svg';
 
 import './style.css';
 
 const SideNav = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
   const NavOpenOrCloseIcon = isNavOpen ? menuExit : burgerMenu;
 
   return (
@@ -20,6 +21,10 @@ const SideNav = () => {
           alt='open menu'
           onClick={() => setIsNavOpen(!isNavOpen)}
         />
+      </div>
+      <div className='LogoContent'>
+        <img src={logo} alt='logo' />
+        <h1 className='LogoContent-title'>BECO</h1>
       </div>
     </div>
   );

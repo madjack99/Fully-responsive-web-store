@@ -6,7 +6,7 @@ import search from './search.svg';
 const Header = () => {
   return (
     <header className='Header'>
-      <h1 className='Header-title'>Развлечения</h1>
+      <h2 className='Header-title'>Развлечения</h2>
       <form className='ShopSearch'>
         <img src={search} className='ShopSearch-image' alt='search shop' />
         <input

@@ -25,5 +25,16 @@
   background: url('./icons/mobile-union.svg');
 }
 
-.SideNav-menuIcon {
+.LogoContent {
+  display: flex;
+  align-items: center;
+  height: 111px;
+  padding: 0 0 0 20px;
+}
+
+.LogoContent-title {
+  padding: 0 0 0 5px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }

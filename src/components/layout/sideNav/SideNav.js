@@ -10,7 +10,9 @@ const SideNav = () => {
   const NavOpenOrCloseIcon = isNavOpen ? menuExit : burgerMenu;
 
   return (
-    <div className='SideNav'>
+    <div
+      className={`SideNav ${isNavOpen ? 'SideNav_opened' : 'SideNav_closed'}`}
+    >
       <div className='SideNav-pop'>
         <img
           className='SideNav-menuIcon'

@@ -1,17 +1,14 @@
 .SideNav {
   position: fixed;
   z-index: 100;
+  width: 192px;
   height: 100vh;
   background: var(--sidebar-color);
-  transition: width 0.5s;
+  transition: transform 0.5s;
 }
 
 .SideNav_closed {
-  width: 12px;
-}
-
-.SideNav_opened {
-  width: 192px;
+  transform: translate(-180px);
 }
 
 .SideNav-pop {
@@ -37,4 +34,21 @@
   font-size: 14px;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
+}
+
+.MenuItem {
+  height: 64px;
+  padding: 20px 0;
+}
+
+.MenuItem-title {
+  padding: 0 0 0 19px;
+  font-size: 16px;
+  font-family: var(--open-sans-font);
+  font-weight: 600;
+}
+
+.MenuItem-title_active {
+  border-left: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }

@@ -1,19 +1,27 @@
 import React from 'react';
 
 import { useShopDepartmentContext } from '../../../contexts/shopDepartment';
+import { shopDepartmentTitles } from '../../../settings';
 
 import './style.css';
 
-const navItems = ['Каталог', 'Здоровье', 'Красота', 'Развлечения', 'Авто'];
-
-const SideNavMenu = () => {
+const SideNavMenu = ({ setIsNavOpen }) => {
   const [shopDepartment, setShopDepartment] = useShopDepartmentContext();
-  console.log(shopDepartment);
 
   const renderNavItems = () =>
-    navItems.map((item, index) => (
+    shopDepartmentTitles.map((item, index) => (
       <div className='MenuItem' key={index}>
-        <h2 className='MenuItem-title MenuItem-title_active'>{item}</h2>
+        <h2
+          className={`MenuItem-title ${
+            item === shopDepartment ? 'MenuItem-title_active' : ''
+          }`}
+          onClick={() => {
+            setShopDepartment(item);
+            setIsNavOpen(false);
+          }}
+        >
+          {item}
+        </h2>
       </div>
     ));
 

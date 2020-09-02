@@ -9,11 +9,11 @@ import logo from './icons/logo.svg';
 import './style.css';
 
 const SideNav = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
   const NavOpenOrCloseIcon = isNavOpen ? menuExit : burgerMenu;
 
   return (
-    <div className={`SideNav ${isNavOpen && 'SideNav_closed'}`}>
+    <div className={`SideNav ${isNavOpen ? '' : 'SideNav_closed'}`}>
       <div className='SideNav-pop'>
         <img
           className='SideNav-menuIcon'
@@ -26,7 +26,7 @@ const SideNav = () => {
         <img src={logo} alt='logo' />
         <h1 className='LogoContent-title'>BECO</h1>
       </div>
-      <SideNavMenu />
+      <SideNavMenu setIsNavOpen={setIsNavOpen} />
     </div>
   );
 };

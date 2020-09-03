@@ -1,0 +1,6 @@
+.DiscountsArea {
+  padding: 27px 20px 0 32px;
+  display: grid;
+  grid-template-columns: 268px;
+  gap: 15px 0;
+}

@@ -1,0 +1,6 @@
+.DiscountCard {
+  width: 268px;
+  height: 130px;
+  background: var(--header-color);
+  border-radius: 10px;
+}

@@ -5,6 +5,10 @@
   padding: 16px 20px;
   background: var(--header-color) url('./images/wine-mobile.svg') no-repeat 100%;
   border-radius: 10px;
+}
+
+.DiscountCard_active {
+  padding: 15px 19px;
   border: 1px solid red;
 }
 
@@ -16,6 +20,9 @@
   left: -5px;
   transform: translateY(-50%) rotate(45deg);
   background: #fafafa;
+}
+
+.DiscountCard-before_active {
   border-top: 1px solid red;
   border-right: 1px solid red;
 }
@@ -28,6 +35,9 @@
   right: -5px;
   transform: translateY(-50%) rotate(45deg);
   background: #fafafa;
+}
+
+.DiscountCard-after_active {
   border-bottom: 1px solid red;
   border-left: 1px solid red;
 }

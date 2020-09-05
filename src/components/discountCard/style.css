@@ -1,10 +1,9 @@
 .DiscountCard {
   position: relative;
-  box-sizing: border-box;
   width: 268px;
   height: 130px;
   padding: 16px 20px;
-  background: var(--header-color);
+  background: var(--header-color) url('./images/wine-mobile.svg') no-repeat 100%;
   border-radius: 10px;
   border: 1px solid red;
 }
@@ -31,4 +30,42 @@
   background: #fafafa;
   border-bottom: 1px solid red;
   border-left: 1px solid red;
+}
+
+.DiscountCard-title {
+  font-family: var(--roboto-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.DiscountCard-message {
+  margin: 0 0 25px;
+  font-family: var(--roboto-font);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.5;
+}
+
+.DiscountCart-amount {
+  font-family: var(--roboto-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 24px;
+  color: #df212d;
+}
+
+.DiscountCart-description {
+  font-family: var(--roboto-font);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  opacity: 0.5;
 }

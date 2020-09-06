@@ -52,3 +52,21 @@
   border-left: 2px solid var(--secondary-color);
   color: var(--secondary-color);
 }
+
+@media only screen and (min-width: 769px) {
+  .SideNav {
+    width: 246px;
+  }
+
+  .SideNav_closed {
+    transform: translate(-142px);
+  }
+
+  .LogoContent_closed {
+    padding-left: 182px;
+  }
+
+  .LogoContent-title_closed {
+    display: none;
+  }
+}

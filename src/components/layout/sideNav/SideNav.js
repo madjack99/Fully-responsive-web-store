@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
 
 import SideNavMenu from './SideNavMenu';
 
@@ -22,9 +23,19 @@ const SideNav = () => {
           onClick={() => setIsNavOpen(!isNavOpen)}
         />
       </div>
-      <div className='LogoContent'>
+      <div
+        className={classNames('LogoContent', {
+          LogoContent_closed: !isNavOpen,
+        })}
+      >
         <img src={logo} alt='logo' />
-        <h1 className='LogoContent-title'>BECO</h1>
+        <h1
+          className={classNames('LogoContent-title', {
+            'LogoContent-title_closed': !isNavOpen,
+          })}
+        >
+          BECO
+        </h1>
       </div>
       <SideNavMenu setIsNavOpen={setIsNavOpen} />
     </div>

@@ -4,3 +4,11 @@
   grid-template-columns: 268px;
   gap: 15px 0;
 }
+
+@media only screen and (min-width: 769px) {
+  .DiscountsArea {
+    padding-left: 130px;
+    grid-template-columns: 296px 296px;
+    gap: 20px 20px;
+  }
+}

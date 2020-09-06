@@ -25,8 +25,8 @@ const DiscountCard = () => {
           />
           <h3 className='DiscountCard-title'>{card.title}</h3>
           <p className='DiscountCard-message'>{card.message}</p>
-          <p className='DiscountCart-amount'>{card.amount}</p>
-          <p className='DiscountCart-description'>{card.description}</p>
+          <p className='DiscountCard-amount'>{card.amount}</p>
+          <p className='DiscountCard-description'>{card.description}</p>
           <div
             className={classNames('DiscountCard-after', {
               'DiscountCard-after_active': index === selectedCard,

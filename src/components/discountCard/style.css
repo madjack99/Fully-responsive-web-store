@@ -61,7 +61,7 @@
   opacity: 0.5;
 }
 
-.DiscountCart-amount {
+.DiscountCard-amount {
   font-family: var(--roboto-font);
   font-style: normal;
   font-weight: 500;
@@ -70,7 +70,7 @@
   color: #df212d;
 }
 
-.DiscountCart-description {
+.DiscountCard-description {
   font-family: var(--roboto-font);
   font-weight: normal;
   font-size: 12px;
@@ -78,4 +78,29 @@
   letter-spacing: 0.4em;
   text-transform: uppercase;
   opacity: 0.5;
+}
+
+@media only screen and (min-width: 769px) {
+  .DiscountCard {
+    width: 296px;
+    height: 144px;
+    padding: 15px 18px;
+  }
+
+  .DiscountCard-title {
+    font-size: 14px;
+  }
+
+  .DiscountCard-message {
+    font-size: 14px;
+  }
+
+  .DiscountCard-amount {
+    font-size: 36px;
+    line-height: 28px;
+  }
+
+  .DiscountCard-description {
+    font-size: 16px;
+  }
 }

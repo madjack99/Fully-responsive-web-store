@@ -37,7 +37,7 @@ const SideNav = () => {
           BECO
         </h1>
       </div>
-      <SideNavMenu setIsNavOpen={setIsNavOpen} />
+      <SideNavMenu setIsNavOpen={setIsNavOpen} isNavOpen={isNavOpen} />
     </div>
   );
 };

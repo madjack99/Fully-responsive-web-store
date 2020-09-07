@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   position: absolute;
+  z-index: 10;
   right: -48px;
   width: 48px;
   height: 106px;
@@ -29,10 +30,11 @@
   align-items: center;
   height: 111px;
   padding: 0 0 0 20px;
+  transition: opacity 0.5s, padding 0.5s;
 }
 
 .LogoContent_closed {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .LogoContent-title {
@@ -40,6 +42,7 @@
   font-size: 14px;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  transition: opacity 0.5s;
 }
 
 .MenuItem {
@@ -76,15 +79,37 @@
   }
 
   .SideNav_closed {
-    transform: translate(-142px);
+    /* transform: translate(-142px); */
+    width: 104px;
+  }
+
+  .LogoContent {
+    padding: 0 0 0 40px;
   }
 
   .LogoContent_closed {
-    padding-left: 182px;
+    /* padding-left: 182px; */
+    opacity: 1;
   }
 
   .LogoContent-title_closed {
-    display: none;
+    opacity: 0;
+  }
+
+  .MenuItem_closed {
+    opacity: 1;
+  }
+
+  .MenuItem-title {
+    padding: 0 0 0 40px;
+  }
+
+  .MenuItem-title_active {
+    padding: 0 0 0 38px;
+  }
+
+  .MenuItem-title_closed {
+    color: var(--sidebar-color);
   }
 
   .MenuItem-image {

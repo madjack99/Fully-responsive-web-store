@@ -18,9 +18,13 @@ const SideNavMenu = ({ setIsNavOpen, isNavOpen }) => {
           key={index}
         >
           <h2
-            className={`MenuItem-title ${
-              item === shopDepartment ? 'MenuItem-title_active' : ''
-            }`}
+            // className={`MenuItem-title ${
+            //   item === shopDepartment ? 'MenuItem-title_active' : ''
+            // }`}
+            className={classNames('MenuItem-title', {
+              'MenuItem-title_active': item === shopDepartment,
+              'MenuItem-title_closed': !isNavOpen,
+            })}
             onClick={() => {
               setShopDepartment(item);
               setIsNavOpen(false);

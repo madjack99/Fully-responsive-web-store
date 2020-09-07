@@ -9,21 +9,25 @@ const SideNavMenu = ({ setIsNavOpen }) => {
   const [shopDepartment, setShopDepartment] = useShopDepartmentContext();
 
   const renderNavItems = () =>
-    shopDepartmentTitles.map((item, index) => (
-      <div className='MenuItem' key={index}>
-        <h2
-          className={`MenuItem-title ${
-            item === shopDepartment ? 'MenuItem-title_active' : ''
-          }`}
-          onClick={() => {
-            setShopDepartment(item);
-            setIsNavOpen(false);
-          }}
-        >
-          {item}
-        </h2>
-      </div>
-    ));
+    shopDepartmentTitles.map((item, index) => {
+      const imgSrc = require(`./icons/${item}.svg`);
+      return (
+        <div className='MenuItem' key={index}>
+          <h2
+            className={`MenuItem-title ${
+              item === shopDepartment ? 'MenuItem-title_active' : ''
+            }`}
+            onClick={() => {
+              setShopDepartment(item);
+              setIsNavOpen(false);
+            }}
+          >
+            <img src={imgSrc} alt={item} className='MenuItem-image' />
+            {item}
+          </h2>
+        </div>
+      );
+    });
 
   return <>{renderNavItems()}</>;
 };

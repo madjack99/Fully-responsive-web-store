@@ -46,6 +46,8 @@
   font-size: 16px;
   font-family: var(--open-sans-font);
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .MenuItem-title_active {
@@ -68,5 +70,9 @@
 
   .LogoContent-title_closed {
     display: none;
+  }
+
+  .MenuItem-image {
+    margin: 0 12px 0 0;
   }
 }

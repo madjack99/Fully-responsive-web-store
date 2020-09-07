@@ -10,7 +10,7 @@ import logo from './icons/logo.svg';
 import './style.css';
 
 const SideNav = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
   const NavOpenOrCloseIcon = isNavOpen ? menuExit : burgerMenu;
 
   return (

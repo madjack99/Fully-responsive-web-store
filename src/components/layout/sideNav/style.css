@@ -4,12 +4,10 @@
   width: 192px;
   height: 100vh;
   background: var(--sidebar-color);
-  /* transition: transform 0.5s; */
   transition: width 0.5s;
 }
 
 .SideNav_closed {
-  /* transform: translate(-180px); */
   width: 12px;
 }
 

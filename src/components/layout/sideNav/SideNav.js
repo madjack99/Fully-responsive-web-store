@@ -11,7 +11,7 @@ import logoLg from './icons/logo-lg.svg';
 import './style.css';
 
 const SideNav = () => {
-  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const responsiveLogo = windowWidth > 1440 ? logoLg : logoSm;

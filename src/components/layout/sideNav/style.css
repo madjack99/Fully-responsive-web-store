@@ -67,10 +67,6 @@
   color: var(--secondary-color);
 }
 
-.MenuItem-image {
-  display: none;
-}
-
 @media only screen and (min-width: 769px) {
   .SideNav {
     width: 246px;
@@ -106,10 +102,5 @@
 
   .MenuItem-title_closed .Title-text {
     display: none;
-  }
-
-  .MenuItem-image {
-    display: block;
-    margin: 0 12px 0 0;
   }
 }

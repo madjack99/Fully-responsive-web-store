@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import SvgIconsNav from '../../svgIcons';
+
 import { useShopDepartmentContext } from '../../../contexts/shopDepartment';
 import { shopDepartmentTitles } from '../../../settings';
 
@@ -11,7 +13,7 @@ const SideNavMenu = ({ setIsNavOpen, isNavOpen }) => {
 
   const renderNavItems = () =>
     shopDepartmentTitles.map((item, index) => {
-      const imgSrc = require(`./icons/${item}.svg`);
+      const isNavItemSelected = item === shopDepartment;
       return (
         <div
           className={classNames('MenuItem', { MenuItem_closed: !isNavOpen })}
@@ -19,7 +21,7 @@ const SideNavMenu = ({ setIsNavOpen, isNavOpen }) => {
         >
           <h2
             className={classNames('MenuItem-title', {
-              'MenuItem-title_active': item === shopDepartment,
+              'MenuItem-title_active': isNavItemSelected,
               'MenuItem-title_closed': !isNavOpen,
             })}
             onClick={() => {
@@ -27,7 +29,10 @@ const SideNavMenu = ({ setIsNavOpen, isNavOpen }) => {
               setIsNavOpen(false);
             }}
           >
-            <img src={imgSrc} alt={item} className='MenuItem-image' />
+            <SvgIconsNav
+              name={item}
+              stroke={isNavItemSelected ? '#34abe0' : undefined}
+            />
             <span className='Title-text'>{item}</span>
           </h2>
         </div>

@@ -18,9 +18,6 @@ const SideNavMenu = ({ setIsNavOpen, isNavOpen }) => {
           key={index}
         >
           <h2
-            // className={`MenuItem-title ${
-            //   item === shopDepartment ? 'MenuItem-title_active' : ''
-            // }`}
             className={classNames('MenuItem-title', {
               'MenuItem-title_active': item === shopDepartment,
               'MenuItem-title_closed': !isNavOpen,
@@ -31,7 +28,7 @@ const SideNavMenu = ({ setIsNavOpen, isNavOpen }) => {
             }}
           >
             <img src={imgSrc} alt={item} className='MenuItem-image' />
-            {item}
+            <span className='Title-text'>{item}</span>
           </h2>
         </div>
       );

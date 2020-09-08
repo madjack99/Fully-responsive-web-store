@@ -52,3 +52,21 @@
   font-weight: 400;
   color: var(--placeholder-color);
 }
+
+@media only screen and (min-width: 769px) {
+  .Header {
+    padding: 31px 26px 27px 130px;
+  }
+
+  .Header-title {
+    font-size: 28px;
+  }
+
+  .Header_scrolled {
+    padding-left: 180px;
+  }
+
+  ::placeholder {
+    font-size: 18px;
+  }
+}

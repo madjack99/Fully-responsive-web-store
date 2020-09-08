@@ -108,8 +108,8 @@
     padding: 0 0 0 38px;
   }
 
-  .MenuItem-title_closed {
-    color: var(--sidebar-color);
+  .MenuItem-title_closed .Title-text {
+    display: none;
   }
 
   .MenuItem-image {

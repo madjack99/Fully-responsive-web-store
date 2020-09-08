@@ -104,3 +104,21 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .SideNav {
+    width: 240px;
+  }
+
+  .LogoContent-title_closed {
+    display: block;
+  }
+
+  .MenuItem-title_closed .Title-text {
+    display: block;
+  }
+
+  .SideNav-pop {
+    display: none;
+  }
+}

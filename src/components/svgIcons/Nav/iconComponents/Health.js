@@ -15,9 +15,9 @@ const Health = ({ fill = 'none', stroke = 'black' }) => {
       <path
         d='M22 12H18L15 21L9 3L6 12H2'
         stroke={stroke}
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   );

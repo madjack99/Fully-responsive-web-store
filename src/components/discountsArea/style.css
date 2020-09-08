@@ -13,3 +13,10 @@
     gap: 20px 20px;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .DiscountsArea {
+    padding-left: 300px;
+    grid-template-columns: repeat(3, 347px);
+  }
+}

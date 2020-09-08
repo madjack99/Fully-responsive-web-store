@@ -92,6 +92,7 @@
   }
 
   .DiscountCard-message {
+    margin: 0 0 31px;
     font-size: 14px;
   }
 
@@ -101,6 +102,22 @@
   }
 
   .DiscountCard-description {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .DiscountCard {
+    width: 347px;
+    height: 160px;
+  }
+
+  .DiscountCard-title {
+    font-size: 16px;
+  }
+
+  .DiscountCard-message {
+    margin: 0 0 43px;
     font-size: 16px;
   }
 }
